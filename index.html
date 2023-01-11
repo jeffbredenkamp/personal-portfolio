@@ -11,7 +11,7 @@
     <link rel="icon" href="dist/img/favicon.png">
     <link rel="stylesheet" href="dist/css/main.min.css">
   </head>
-  <body>
+  <body id="theme">
     <div class="loader-body" id="loader">
       <div class="loader"></div>
     </div>
@@ -27,7 +27,13 @@
             </div>
             <ul>
               <li>
-                <a href="mailto:jeffbredenkamp@gmail.com" class="btn btn-primary">Get in Touch</a>
+                <button class="btn btn-circle btn-transparent" id="toggle-btn" class="dark-mode-toggle"><span class="dark-mode-text"><img src="dist/img/sun.svg" alt="switch to light mode"></span><span class="light-mode-text"><img src="dist/img/moon.svg" alt="switch to dark mode"></span></button>
+              </li>
+              <li>
+                <a href="#" class="btn btn-secondary cv"><span>Download </span>CV</a>
+              </li>
+              <li>
+                <a href="mailto:jeffbredenkamp@gmail.com" class="btn btn-primary">Contact</a>
               </li>
             </ul>
           </nav>
@@ -89,5 +95,15 @@
       </section>
     </div>
     <script src="dist/js/main.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146077531-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146077531-1');
+    </script>
   </body>
 </html>
